@@ -5,6 +5,22 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome Danail</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome to Gift_Shop</h1>
+    <br />
+    <br />
+    <br />
+    <p>
+        This is a demonstration of a gift shop website. Click the Admin Interface button to input data. Click the User Interface Button to view data as a user
+    </p>
+    <br />
+    <br />
+    <br />
+    <div class="container row p-0 m-0">
+        <div class="col-6">
+            <a asp-page="User_Interface/Index" class="btn btn-success form-control"> User Interface</a>
+        </div>
+        <div class="col-6">
+            <a asp-page="ItemList/Index" class="btn btn-success form-control"> Admin Interface</a>
+        </div>
+    </div>
 </div>

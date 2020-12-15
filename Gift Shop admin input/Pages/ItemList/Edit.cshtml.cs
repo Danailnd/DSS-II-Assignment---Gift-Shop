@@ -38,7 +38,11 @@ namespace Gift_Shop_admin_input.Pages.ItemList
 
                 return RedirectToPage("Index");
             }
-            return RedirectToPage();
+            else
+            {
+                return Page();
+            }
+            //return RedirectToPage();
         }
     }
 }

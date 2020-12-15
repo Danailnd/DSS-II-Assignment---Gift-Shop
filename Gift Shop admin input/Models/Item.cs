@@ -12,10 +12,8 @@ namespace Gift_Shop_admin_input.Models
         public int Id { get; set; }
 
         [Required]
-        [Range(0, 300)]
         public string Name { get; set; }
         public string ImageAddress { get; set; }
-        [Range(0, 300)]
         public string Category { get; set; }
         [Range(0,100000)]
         public double Price { get; set; }

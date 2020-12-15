@@ -27,6 +27,7 @@ namespace Gift_Shop_admin_input.Pages.ItemList
         {
             if (ModelState.IsValid)
             {
+                Item.Date = DateTime.Now;
                 await _db.Item.AddAsync(Item);
                 await _db.SaveChangesAsync();
                 return RedirectToPage("Index");
